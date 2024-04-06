@@ -1,16 +1,28 @@
 package com.ejercicio.apiusuarios.controller;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
+import com.ejercicio.apiusuarios.model.User;
+
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class UserController {
 
-    @GetMapping("/usuarios")
-    public String getMethodName(@RequestParam String param) {
-        return new String();
+    //Se rescata el valor de la expresion regular del email y password a validar desde las properties
+    @Value("{$email.regex}")
+    private String emailRegex;
+
+    @Value("${password.regex}")
+    private String passwordRegex;
+
+    @PostMapping("/crearusuario")
+    public String postMethodName(@RequestBody User usuario) {
+        //TODO: process POST request
+        
+        return null;
     }
+    
     
 }
