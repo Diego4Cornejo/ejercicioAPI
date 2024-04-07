@@ -1,10 +1,10 @@
 API Rest para la creación de usuarios
 
 Requisitos:
-- Java 17
+- Java 17 https://jdk.java.net/archive/
 - Maven 
-- H2 Database
 - Postman (Opcional)
+- Se requiere que el JAVA_PATH este correctamente configurado para que la ambientacion funcione correctamente.
 
 Pasos:
 1.- Clona el siguiente repositorio:
@@ -16,7 +16,6 @@ mvn spring-boot:run
 o
 mvnw spring-boot:run
 
-se requiere que el JAVA_PATH este correctamente configurado para que la ambientacion funcione correctamente.
 
 3.-Carga la siguiente URL 
 http://localhost:8080/swagger-ui/index.html#/
