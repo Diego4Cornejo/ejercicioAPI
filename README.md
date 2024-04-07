@@ -2,7 +2,7 @@ API Rest para la creación de usuarios
 
 Requisitos:
 - Java 17
-- Maven
+- Maven 
 - H2 Database
 - Postman (Opcional)
 
@@ -13,6 +13,10 @@ git clone https://github.com/Diego4Cornejo/ejercicioAPI.git
 
 2.- Abre la terminal en la carpeta del proyecto y ejecuta el siguiente comando (la base de datos se generara automaticamente al iniciar el proyecto)
 mvn spring-boot:run
+o
+mvnw spring-boot:run
+
+se requiere que el JAVA_PATH este correctamente configurado para que la ambientacion funcione correctamente.
 
 3.-Carga la siguiente URL 
 http://localhost:8080/swagger-ui/index.html#/
