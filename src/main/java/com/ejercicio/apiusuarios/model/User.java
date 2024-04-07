@@ -1,5 +1,6 @@
 package com.ejercicio.apiusuarios.model;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 import jakarta.persistence.*;
@@ -15,7 +16,10 @@ public class User {
     private String email;
     private String password;
     private boolean isActive;
-    
+    private LocalDateTime created;
+    private LocalDateTime modified;
+    private LocalDateTime lastLogin;
+
     @OneToMany(mappedBy="user",cascade = CascadeType.ALL)
     private List<Phone> phones;
 
@@ -63,7 +67,7 @@ public class User {
         this.password = password;
     }
 
-    public boolean isActive() {
+    public boolean getIsActive() {
         return isActive;
     }
 
@@ -79,5 +83,27 @@ public class User {
         this.phones = phones;
     }
 
+    public LocalDateTime getLastLogin() {
+        return lastLogin;
+    }
 
+    public void setLastLogin(LocalDateTime lastLogin) {
+        this.lastLogin = lastLogin;
+    }
+
+    public LocalDateTime getModified() {
+        return modified;
+    }
+
+    public void setModified(LocalDateTime modified) {
+        this.modified = modified;
+    }
+
+    public LocalDateTime getCreated() {
+        return created;
+    }
+
+    public void setCreated(LocalDateTime created) {
+        this.created = created;
+    }
 }
