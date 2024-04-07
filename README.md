@@ -8,7 +8,8 @@ Requisitos:
 
 Pasos:
 1.- Clona el siguiente repositorio:
-https://github.com/Diego4Cornejo/ejercicioAPI.git
+
+git clone https://github.com/Diego4Cornejo/ejercicioAPI.git
 
 2.- Abre la terminal en la carpeta del proyecto y ejecuta el siguiente comando (la base de datos se generara automaticamente al iniciar el proyecto)
 mvn spring-boot:run
