@@ -19,7 +19,6 @@ public class User {
     @OneToMany(mappedBy="user",cascade = CascadeType.ALL)
     private List<Phone> phones;
 
-
     public User() {
     }
 
@@ -70,6 +69,14 @@ public class User {
 
     public void setActive(boolean isActive) {
         this.isActive = isActive;
+    }
+
+    public List<Phone> getPhones() {
+        return phones;
+    }
+
+    public void setPhones(List<Phone> phones) {
+        this.phones = phones;
     }
 
 
