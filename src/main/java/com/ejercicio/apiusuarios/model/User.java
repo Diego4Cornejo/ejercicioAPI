@@ -14,6 +14,7 @@ public class User {
     private String name;
     private String email;
     private String password;
+    private boolean isActive;
     
     @OneToMany(mappedBy="user",cascade = CascadeType.ALL)
     private List<Phone> phones;
@@ -62,5 +63,14 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public boolean isActive() {
+        return isActive;
+    }
+
+    public void setActive(boolean isActive) {
+        this.isActive = isActive;
+    }
+
 
 }

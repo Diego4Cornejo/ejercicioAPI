@@ -1,7 +1,10 @@
 package com.ejercicio.apiusuarios.dto;
 
+/***
+ * Clase DTO Para la creacion del usuario 
+ */
 public class CreatePhoneDTO {
-    
+
     private String number;
 
     private String citycode;

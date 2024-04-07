@@ -2,6 +2,9 @@ package com.ejercicio.apiusuarios.dto;
 
 import java.util.List;
 
+/***
+ * Clase DTO para la creacion del usuario
+ */
 public class CreateUserDTO {
     private String name;
     private String email;
