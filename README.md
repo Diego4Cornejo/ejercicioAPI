@@ -24,6 +24,7 @@ http://localhost:8080/
 
 4.- Puedes entrar a la BD con la siguiente URL 
 http://localhost:8080/h2-console/
+URL=jdbc:h2:mem:apiusuariodb
 user:sa
 password:password
 
