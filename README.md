@@ -52,7 +52,7 @@ Longitud mínima de 8 caracteres.
 # Ejemplo
 
 BODY(JSON):
-
+    ```bash 
 {
   "name": "Nombre Apellido",
   "email": "correo@example.com",
@@ -67,7 +67,7 @@ BODY(JSON):
 }
 
 Respuesta Exitosa: 
-
+     ```bash 
 {
   "id": "1",
   "user": "correo@example.com",
@@ -79,5 +79,6 @@ Respuesta Exitosa:
 }
 
 Validacion para el token 
-localhost:8080//valida-token?token={token}
-Respuesta: Token Valido - Token Invalido
+    ```bash 
+    localhost:8080//valida-token?token={token}
+    Respuesta: Token Valido - Token Invalido
