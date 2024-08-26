@@ -1,44 +1,49 @@
-API Rest para la creación de usuarios
+# API REST para la Creación de Usuarios
 
-Requisitos:
-- Java 17 https://jdk.java.net/archive/
-- Maven 
+## Requisitos
+
+- Java 17: [Descargar JDK 17](https://jdk.java.net/archive/)
+- Maven
 - Postman (Opcional)
-- Se requiere que el JAVA_PATH este correctamente configurado para que la ambientacion funcione correctamente.
+- Asegúrate de que `JAVA_PATH` esté configurado correctamente para que el entorno funcione correctamente.
 
-Pasos:
-1.- Clona el siguiente repositorio:
+## Pasos para Ejecutar
 
-git clone https://github.com/Diego4Cornejo/ejercicioAPI.git
+1. Clona el siguiente repositorio:
 
-2.- Abre la terminal en la carpeta del proyecto y ejecuta el siguiente comando (la base de datos se generara automaticamente al iniciar el proyecto)
+   ```bash
+   git clone https://github.com/Diego4Cornejo/ejercicioAPI.git
+
+2. Abre la terminal en la carpeta del proyecto y ejecuta el siguiente comando (la base de datos se generara automaticamente al iniciar el proyecto)
 mvn spring-boot:run
 o
 mvnw spring-boot:run
 
 
-3.-Carga la siguiente URL 
+3. Carga la siguiente URL 
 http://localhost:8080/swagger-ui/index.html#/
 o
 http://localhost:8080/
 
-4.- Puedes entrar a la BD con la siguiente URL 
+4.  Puedes entrar a la BD con la siguiente URL 
 http://localhost:8080/h2-console/
 URL=jdbc:h2:mem:apiusuariodb
 user:sa
 password:password
 
-USO:
+## USO:
 
-Registro de Usuarios:
+1. Registro de Usuarios:
 localhost:8080/crearusuario
 
-El correo debe seguir el siguiente formado: (aaaaaaa@dominio.cl)
+2. El correo debe seguir el siguiente formado: (aaaaaaa@dominio.cl)
 La contraseña debe seguir el siguiente formato: 
 Al menos un dígito (0-9).
 Al menos una letra minúscula (a-z).
 Al menos una letra mayúscula (A-Z).
 Longitud mínima de 8 caracteres.
+
+# Ejemplo
 
 BODY(JSON):
 
