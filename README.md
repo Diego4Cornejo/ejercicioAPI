@@ -78,6 +78,5 @@ Respuesta Exitosa:
 }
 
 Validacion para el token 
-    bash 
     localhost:8080//valida-token?token={token}
     Respuesta: Token Valido - Token Invalido
