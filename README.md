@@ -29,6 +29,7 @@
     http://localhost:8080/
 
 4.  Puedes entrar a la BD con la siguiente URL 
+    ```bash 
     http://localhost:8080/h2-console/
     URL=jdbc:h2:mem:apiusuariodb
     user:sa
@@ -37,9 +38,11 @@
 ## USO:
 
 1. Registro de Usuarios:
-localhost:8080/crearusuario
+    ```bash 
+    localhost:8080/crearusuario
 
-2. El correo debe seguir el siguiente formado: (aaaaaaa@dominio.cl)
+2. El correo debe seguir el siguiente formado: 
+(aaaaaaa@dominio.cl)
 La contraseña debe seguir el siguiente formato: 
 Al menos un dígito (0-9).
 Al menos una letra minúscula (a-z).
