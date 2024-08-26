@@ -15,9 +15,11 @@
    git clone https://github.com/Diego4Cornejo/ejercicioAPI.git
 
 2. Abre la terminal en la carpeta del proyecto y ejecuta el siguiente comando (la base de datos se generara automaticamente al iniciar el proyecto)
-mvn spring-boot:run
-o
-mvnw spring-boot:run
+  ```bash
+  mvn spring-boot:run
+  o
+  ```bash
+  mvnw spring-boot:run
 
 
 3. Carga la siguiente URL 
