@@ -52,7 +52,7 @@ Longitud mínima de 8 caracteres.
 # Ejemplo
 
 BODY(JSON):
-    ```bash 
+```bash 
 {
   "name": "Nombre Apellido",
   "email": "correo@example.com",
@@ -67,7 +67,7 @@ BODY(JSON):
 }
 
 Respuesta Exitosa: 
-     ```bash 
+```bash 
 {
   "id": "1",
   "user": "correo@example.com",
